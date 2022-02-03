@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bowling Score Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">    
+</head>        
+<body>
+
+<div class="container text-center main">
+  <h2>BOWLING SCORE CALCULATOR</h2>    
+
+<p><strong>Input Spares and Strikes Accordingly | Only Addition - No Automatic Spares and Strikes Calc Included</strong></p>
+    
+<!-- ROUND ONE / 1 - 2 --> 
+<h3><span class="label alert-success"><strong>FRAME ONE</strong></span></h3>
+    
+ <form>
+    <div class="form-group row"> 
+      <div class="col-xs-6 text-center">
+        <label for="one">Ball One:</label>
+        <input class="form-control text-center" id="one" type="text">
+      </div>
+      <div class="col-xs-6 text-center">
+        <label for="two">Ball Two:</label>
+        <input class="form-control text-center" id="two" type="text">
+      </div>  
+    </div> 
+</form>
+    
+<button type="button" class="btn btn-success btn-block text-center" onclick="calculatePoints()">TOTAL SCORE</button>
+<br>   
+<h2><span class="label label-warning" id="scoreOneTotal"></span></h2>
+         
+<!-- ROUND TWO / 3 - 4 --> 
+<h3><span class="label alert-success"><strong>FRAME TWO</strong></span></h3>    
+
+<form>
+    <div class="form-group row">    
+      <div class="col-xs-6">
+        <label for="three">Ball Three:</label>
+        <input class="form-control text-center" id="three" type="text">
+      </div>
+      <div class="col-xs-6">
+        <label for="four">Ball Four:</label>
+        <input class="form-control text-center" id="four" type="text">
+      </div>
+    </div>
+  </form>  
+
+<button type="button" class="btn btn-success btn-block" onclick="calculatePoints()">TOTAL SCORE</button>       
+<br>
+<h2><span class="label label-warning" id="scoreTwoTotal"></span></h2>
+
+    
+<!-- ROUND THREE / 5 - 6 -->
+<h3><span class="label alert-success"><strong>FRAME THREE</strong></span></h3>     
+
+<form>
+    <div class="form-group row">
+      <div class="col-xs-6">
+        <label for="five">Ball Five:</label>
+        <input class="form-control text-center" id="five" type="text">
+      </div>
+      <div class="col-xs-6">
+        <label for="six">Ball Six:</label>
+        <input class="form-control text-center" id="six" type="text">
+      </div>
+    </div>
+  </form>  
+
+<button type="button" class="btn btn-success btn-block" onclick="calculatePoints()">TOTAL SCORE</button>       
+<br>
+<h2><span class="label label-warning" id="scoreThreeTotal"></span></h2>
+    
+
+<!-- ROUND FOUR / 7 - 8 -->
+<h3><span class="label alert-success"><strong>FRAME FOUR</strong></span></h3>     
+
+<form>
+    <div class="form-group row">
+      
+      <div class="col-xs-6">
+        <label for="seven">Ball Seven:</label>
+        <input class="form-control text-center" id="seven" type="text">
+      </div>
+      <div class="col-xs-6">
+        <label for="eight">Ball Eight:</label>
+        <input class="form-control text-center" id="eight" type="text">
+      </div>
+    </div>
+  </form>  
+
+<button type="button" class="btn btn-success btn-block" onclick="calculatePoints()">TOTAL SCORE</button>       
+<br>
+<h2><span class="label label-warning" id="scoreFourTotal"></span></h2>     
+
+ 
+<!-- ROUND FIVE / 9 - 10 -->
+<h3><span class="label alert-success"><strong>FRAME FIVE</strong></span></h3>     
+
+<form>
+    <div class="form-group row">
+      
+      <div class="col-xs-6">
+        <label for="nine">Ball Nine:</label>
+        <input class="form-control text-center" id="nine" type="text">
+      </div>
+      <div class="col-xs-6">
+        <label for="ten">Ball Ten:</label>
+        <input class="form-control text-center" id="ten" type="text">
+      </div>
+    </div>
+  </form>  
+
+<button type="button" class="btn btn-success btn-block" onclick="calculatePoints()">TOTAL SCORE</button>       
+<br>
+<h2><span class="label label-warning" id="scoreFiveTotal"></span></h2>     
+    
+       
+</div>    
+           
+    
+<script src="scripts.js"></script>    
+    
+</body>
+</html>    
+    
+    
+    
+    
